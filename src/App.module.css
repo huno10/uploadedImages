@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.container {
+    margin: 0 auto;
+    width: 375px;
+    background: transparent linear-gradient(180deg, #6600FF 0%, #00CC99 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+}

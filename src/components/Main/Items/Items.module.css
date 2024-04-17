@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 14px 19px;
+    margin-bottom: 40px;
+    background: transparent linear-gradient(140deg, #FFF7FC66 0%, #FFFFFF66 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 3px 3px 6px #EEE5E9;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.container:hover {
+    opacity: 0.8;
+}
+
+
+.img {
+    width: 281px;
+    height: 281px;
+    margin-bottom: 11px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.name {
+    font-weight: 900;
+    font-size: 35px;
+    color: #FCEFF9;
+    font-family: "Montserrat", sans-serif;
+}

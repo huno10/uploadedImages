@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 33px;
+    background: #FCEFF9 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.title {
+    font-size: 35px;
+    color: #080708;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.btn {
+    padding: 5px 20px;
+    color: #6600FF;
+    border: 2px solid #6600FF;
+    font-size: 19px;
+    border-radius: 50px;
+    background: #FCEFF9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #6600FF66;
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { HomePage } from './pages/HomePage';
+import { ItemPage } from './pages/ItemPage';
+
+import './styles/reset.css'
+import styles from './App.module.css'
+import { Route, Routes } from 'react-router-dom';
+import { NotFoundPage } from './pages/NotFoundPage';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const [item, setItem] = useState(0)
+
+  const personStore = useSelector((state) => state.person);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={styles.container}>
+        <Routes>
+          <Route path="/" element={<HomePage obj={personStore} setItem={setItem} />} />
+          <Route path="/items/:id" element={<ItemPage item={item} />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </div>
   );
 }
 
